@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body class="cinzel-decorative-bold">
+    <nav>
+        <div><h1>GOT characters</h1></div>
+        <div></div>
+    </nav>
+    <content>
+    <card class="book">
+        <div class="character">
+        <h4>CHARACTER</h4>
+       <h5> <%= content.name %></h5>
+    </div>
+        <div class="cover">
+            <h3>Guess the character</h3>
+            <h4>HINT</h4>
+            <h4>GENDER:  <%= content.gender %></h4>
+            <h4>CULTURE: <%= content.culture %></h4>
+            <h4>TITLE: </h4>
+            <h4> <%= content.titles %></h4>
+        </div>
+    </card>
+    <button class="button-85" role="button" onclick="reloadPage()">
+        Next </button>
+</content>
+
+<script>
+    function reloadPage() {
+            location.reload();
+        }
+</script>
+</body>
+</html>
