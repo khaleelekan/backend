@@ -18,7 +18,7 @@ app.get('/', async (req, res) => {
     };
 
     try {
-        const response = await axios.request(options);
+        const response = await axios.get(options.url);
         const bookData = response.data; // Assuming this response contains book data including the image
         res.render('book-review', { bookData });
     } catch (error) {
