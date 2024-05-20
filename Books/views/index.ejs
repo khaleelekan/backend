@@ -7,10 +7,12 @@
 </head>
 <body>
     <h1>Book Review</h1>
-    <% if (bookData) { %>
+    <img src="data:image/jpeg;base64, <%= imageData %>" alt="Image">
+
+    <% if (cover) { %>
         <div>
             <h2><%= bookData.book.title %></h2>
-            <img src="<%= bookData.book.image %>" alt="<%= bookData.book.title %>">
+            <img src="<%= cover %>" alt="<%= bookData.book.title %>">
             <p><%= bookData.book.description %></p>
             <p>Author: <%= bookData.book.author %></p>
             <p>Rating: <%= bookData.book.rating %></p>
